@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #232946;
-    background: linear-gradient(to right, #b8c1ec, #eebbc3);
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    
   }
 form{
     width: 450px;
-    background: #fff;
+    background: #ffffff94;
     padding: 30px ;
-    border-radius: 5px;
-    box-shadow: 10px 10px 13px rgba(0,0,0,0.1);
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 13px rgba(0, 0, 0, 0.142);
   }
   form header{
     text-align: center;
@@ -49,7 +50,7 @@ form{
     font-size: 15px;
     background: #F1F1F7;
     border-bottom: 2px solid #ccc;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Fredoka', sans-serif;
   }
   .url-input .field input::placeholder{
     color: #b3b3b3;
@@ -144,4 +145,33 @@ form{
       font-size: 12px;
     }
   }
-  
+  .download-btn-cn{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 99999;
+  }
+  .download-btn-cn a{
+    background: none;
+    padding: 13px 22px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    font-family: 'Fredoka', sans-serif;
+    transition: all 0.3s ease;
+  }
+  .download-btn-cn a:hover{
+      color: #7d2ae8;
+      background: #fff;
+  }
+  @media screen and (max-width: 600px){
+      .download-btn-cn{
+          left: 20px;
+      }
+      .download-btn-cn a{
+          font-size: 13px;
+          padding: 9px 15px;
+      }
+  }
